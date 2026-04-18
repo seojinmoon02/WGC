@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SawSeen Archive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="archive-stream-page">
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html#home" class="home-button" aria-label="홈으로 이동">
+        <span class="home-mark"></span>
+        <span>SawSeen</span>
+      </a>
+
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="index.html#about">회사소개</a>
+        <a href="index.html#apply">오프라인세션참가신청</a>
+        <a href="archive.html">전체 아카이브</a>
+        <a href="index.html#members">구성원</a>
+        <a href="index.html#contact">컨택트 인포</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="archive-stream-hero">
+      <div class="container">
+        <p class="eyebrow">SAWSEEN ARCHIVE</p>
+        <div class="archive-stream-hero-row">
+          <h1>세션 아카이브</h1>
+          <p class="archive-stream-intro">
+            카테고리별로 가볍게 훑어보고, 세션은 최신순으로 계속 쌓이는 구조입니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="archive-filter-bar">
+      <div class="container archive-filter-inner">
+        <div class="archive-filter-scroll" id="archive-filter-scroll">
+          <button class="archive-filter-chip is-active" data-category="all">전체</button>
+          <button class="archive-filter-chip" data-category="work">일</button>
+          <button class="archive-filter-chip" data-category="taste">취향</button>
+          <button class="archive-filter-chip" data-category="family">가족</button>
+          <button class="archive-filter-chip" data-category="society">사회</button>
+          <button class="archive-filter-chip" data-category="culture">문화</button>
+        </div>
+        <p class="archive-filter-status" id="archive-filter-status">전체 세션</p>
+      </div>
+    </section>
+
+    <section class="archive-stream-section">
+      <div class="container">
+        <div class="archive-masonry" id="archive-masonry"></div>
+
+        <div class="archive-stream-actions">
+          <button class="button button-secondary" id="archive-load-more">더보기</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="archive.js"></script>
+</body>
+</html>
